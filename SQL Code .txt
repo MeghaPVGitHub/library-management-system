@@ -1,0 +1,33 @@
+SQL Code 
+1. Creating a table:
+CREATE TABLE books (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    author VARCHAR(255) NOT NULL,
+    year YEAR NOT NULL,
+    status ENUM('available', 'borrowed') DEFAULT 'available'
+);
+
+2. Inserting values:
+INSERT INTO books (title, author, year, status)
+VALUES
+('Pride and Prejudice', 'Jane Austen', 1813, 'available'),
+('1984', 'George Orwell', 1949, 'available'),
+('To Kill a Mockingbird', 'Harper Lee', 1960, 'available'),
+('The Great Gatsby', 'F. Scott Fitzgerald', 1925, 'available'),
+('The Diary of a Young Girl', 'Anne Frank', 1947, 'available'),
+('Long Walk to Freedom', 'Nelson Mandela', 1994, 'available'),
+('Steve Jobs', 'Walter Isaacson', 2011, 'available'),
+('The Autobiography of Benjamin Franklin', 'Benjamin Franklin', 1791, 'available'),
+('The Story of My Experiments with Truth', 'Mahatma Gandhi', 1927, 'available'),
+('The Catcher in the Rye', 'J.D. Salinger', 1951, 'available'),
+('Harry Potter and the Philosopher\'s Stone', 'J.K. Rowling', 1997, 'available'),
+('Harry Potter and the Chamber of Secrets', 'J.K. Rowling', 1998, 'available'),
+('Harry Potter and the Prisoner of Azkaban', 'J.K. Rowling', 1999, 'available'),
+('Harry Potter and the Goblet of Fire', 'J.K. Rowling', 2000, 'available'),
+('Harry Potter and the Order of the Phoenix', 'J.K. Rowling', 2003, 'available'),
+('Harry Potter and the Half-Blood Prince', 'J.K. Rowling', 2005, 'available'),
+('Harry Potter and the Deathly Hallows', 'J.K. Rowling', 2007, 'available'),
+('Brave New World', 'Aldous Huxley', 1932, 'available'),
+('Animal Farm', 'George Orwell', 1945, 'available'),
+('Lord of the Flies', 'William Golding', 1954, 'available');
